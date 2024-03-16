@@ -33,10 +33,10 @@ namespace WebTestEntwickler
         }
 
         /// <summary>
-        /// 
+        /// Diese Methode konvertiert den HTMLEncode-Teil eines Texts. 
         /// </summary>
-        /// <param name="strTextEncodeParse"></param>
-        /// <returns></returns>
+        /// <param name="strTextEncodeParse">Durch HTML-Code zu konvertierender Text.</param>
+        /// <returns>Gibt den konvertierten Text zurück, zum Beispiel: <h3>Header</h3>, <h2>Kopfzeile</h2> ou (keine Hashes)'</returns>
         private string HtmlEncodeTextParse(string strTextEncodeParse)
         {
             string strHtmlEncode = HttpUtility.HtmlEncode(strTextEncodeParse).ToString();
